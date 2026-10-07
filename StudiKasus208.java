@@ -33,6 +33,23 @@ public class StudiKasus208 {
                     System.out.println("Alasan: Bukan Juara 1, 2, atau 3.");
                 }
             }
+        }else if (jenisKegiatan.equalsIgnoreCase("PKM")) {
+            if (jumlahDokumen < 4) {
+                System.out.println("Status Dana: TIDAK DIBERIKAN");
+                System.out.println("Alasan: Dokumen tidak lengkap, masih kurang "
+                        + (4 - jumlahDokumen) + " dokumen.");
+            } else {
+                if (statusPendanaan == 1) {
+                    System.out.println("Status Dana: DIBERIKAN");
+                    System.out.println("Alasan: PKM lolos pendanaan dan dokumen lengkap.");
+                } else {
+                    System.out.println("Status Dana: TIDAK DIBERIKAN");
+                    System.out.println("Alasan: PKM tidak lolos pendanaan.");
+                }
+            }
+        } else {
+            System.out.println("Status Dana: TIDAK DIBERIKAN");
+            System.out.println("Alasan: Jenis kegiatan termasuk Lainnya.");
         }
     }
 }

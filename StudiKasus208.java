@@ -20,20 +20,17 @@ public class StudiKasus208 {
                 || jenisKegiatan.equalsIgnoreCase("BAKORMA")
                 || jenisKegiatan.equalsIgnoreCase("Mandiri")) {
             if (jumlahDokumen < 4) {
-                System.out.println("Nama Mahasiswa : " + namaMahasiswa);
-                System.out.println("Status Dana    : TIDAK DIBERIKAN");
-                System.out.println("Alasan         : Dokumen tidak lengkap, masih kurang "
+                System.out.println("Status Dana: TIDAK DIBERIKAN");
+                System.out.println("Alasan: Dokumen tidak lengkap, masih kurang "
                         + (4 - jumlahDokumen) + " dokumen.");
             } else {
                 if (peringkatJuara >= 1 && peringkatJuara <= 3) {
-                    System.out.println("Nama Mahasiswa : " + namaMahasiswa);
-                    System.out.println("Status Dana    : DIBERIKAN");
-                    System.out.println("Alasan         : Meraih Juara " + peringkatJuara
+                    System.out.println("Status Dana: DIBERIKAN");
+                    System.out.println("Alasan: Meraih Juara " + peringkatJuara
                             + " dan dokumen lengkap.");
                 } else {
-                    System.out.println("Nama Mahasiswa : " + namaMahasiswa);
-                    System.out.println("Status Dana    : TIDAK DIBERIKAN");
-                    System.out.println("Alasan         : Bukan Juara 1, 2, atau 3.");
+                    System.out.println("Status Dana: TIDAK DIBERIKAN");
+                    System.out.println("Alasan: Bukan Juara 1, 2, atau 3.");
                 }
             }
         }
